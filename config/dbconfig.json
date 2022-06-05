@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "uxaiocso",
+    "password": "4p3GIuOa0P1KLe1oyy0tLA6QOcdUeS43",
+    "database": "uxaiocso",
+    "host": "abul.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "uxaiocso",
+    "password": "4p3GIuOa0P1KLe1oyy0tLA6QOcdUeS43",
+    "database": "uxaiocso",
+    "host": "abul.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "uxaiocso",
+    "password": "4p3GIuOa0P1KLe1oyy0tLA6QOcdUeS43",
+    "database": "uxaiocso",
+    "host": "abul.db.elephantsql.com",
+    "dialect": "postgres"
+  }
+}

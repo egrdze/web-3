@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/45015a3c77.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hello, my name is Kylie</h1>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="family">Family</a></li>
+          <li><a href="products">Products</a></li>
+          <li><a href="quiz"> Quiz</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="mailto:egorlol946@gmail.com"
+        ><button>Contact</button></a
+      >
+    </header>
+    <section>
+      <h2>About Kylie Jenner</h2>
+      <p>
+        Kylie Kristen Jenner (born August 10, 1997) is an American media
+        personality, socialite, model, and businesswoman. She starred in the E!
+        reality television series Keeping Up with the Kardashians from 2007 to
+        2021 and is the founder and owner of cosmetic company Kylie Cosmetics.
+        She is currently the most followed woman and the second most followed
+        person on Instagram.
+      </p>
+    </section>
+    <section>
+      <h3>Early life</h3>
+      <p>
+        Kylie Kristen Jenner was born on August 10, 1997, in Los Angeles,
+        California. The youngest daughter of former Olympic decathlete champion
+        Caitlyn Jenner (then known as Bruce Jenner) and television personality
+        and businesswoman Kris Jenner. Jenner has an older sister, Kendall and
+        eight older half-siblings. From Caitlyn's side of the family, she has
+        three older half-brothers―Burt, Brandon, and Brody Jenner―and one older
+        half-sister Casey. From Kris' side of the family, Jenner has three older
+        half-sisters―Kourtney, Kim, Khloé―and one older half-brother Rob
+        Kardashian.
+      </p>
+    </section>
+    <section>
+      <a
+        href="https://www.harpersbazaar.com/beauty/hair/g5857/kylie-jenner-transformation/?slide=1"
+        target="_blank"
+      >
+        <img
+          class="card"
+          src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/15/25/hbz-kylie-jenner-transformation-2007-gettyimages-77354476.jpg?crop=1.0xw:1xh;center,top&resize=980:*"
+        />
+      </a>
+      <a
+        href="https://www.harpersbazaar.com/beauty/hair/g5857/kylie-jenner-transformation/?slide=2"
+        target="_blank"
+      >
+        <img
+          class="card"
+          src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/15/25/hbz-kylie-jenner-transformation-2008-gettyimages-527947519.jpg?crop=1.0xw:1xh;center,top&resize=980:*"
+          alt=""
+        />
+      </a>
+    </section>
+    <section>
+      <h3>Kylie as business woman</h3>
+      <p>
+        In August 2015, Jenner announced that she would be launching her first
+        lipstick line as a part of her self-titled lip kit under the name Kylie
+        Lip Kit. In November 2015, the Jenner sisters appeared in singer Justine
+        Skye's "I'm Yours" music video. In February 2016, Jenner's cosmetic
+        company was renamed to Kylie Cosmetics and the number of kits produced
+        rose from an initial 15,000 to 500,000. Now Kylie one of major woman in
+        the world
+      </p>
+    </section>
+    <div id="wrapper"></div>
+    <a
+      class="link"
+      href="https://en.wikipedia.org/wiki/Kylie_Jenner"
+      target="_blank"
+    >
+      Learn more about Kylie Jenner
+    </a>
+
+    <div id="comments">
+      <h2>Comments:</h2>
+      <form action="/" method="post">
+        <label for="name">User name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
+        <button>Add</button>
+      </form>
+      <ul id="comment-list">
+        <%for (let comment of comments){%>
+        <li class="comment">
+          <h3><%= comment.user %></h3>
+          <p><%= comment.text %></p>
+        </li>
+        <%}%>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© Egor Liashenko, 2022</p>
+      <div class="links">
+        <a href="https://www.instagram.com/egoridze_1" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="mailto:egorlol946@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://vk.com/egoridze1" target="_blank"
+          ><i class="fa-brands fa-vk"></i
+        ></a>
+      </div>
+    </footer>
+    <script type="module" src="js.cookie.min.mjs"></script>
+    <script type="module" src="cookie.js"></script>
+  </body>
+</html>
